@@ -1,6 +1,6 @@
 package Inlamning1;
 
-public class Carnivorous extends Plant{
+public class Carnivorous extends Plant{ //Arv
     private final LiquidType liquidType = ILiquidRequirements.proteinDrink;
 
     public Carnivorous() {}
@@ -10,12 +10,12 @@ public class Carnivorous extends Plant{
     }
 
     @Override
-    public double getLiquidAmount() {
+    public double getLiquidAmount() { //Polymorfism overriding överordnade klassers metoder med sin egen implementation baserat objektets behov
         return 0.1 + (0.2 * getHeight());
     }
 
     @Override
-    public LiquidType getLiquidType() {
+    public LiquidType getLiquidType() { //Polymorfism overriding överordnade klassers metoder med sin egen implementation baserat objektets behov
         return liquidType;
     }
 

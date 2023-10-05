@@ -1,6 +1,6 @@
 package Inlamning1;
 
-public class Palm extends Plant{
+public class Palm extends Plant{ //Arv
     private final LiquidType liquidType = ILiquidRequirements.tapWater;
 
     public Palm() {}
@@ -10,12 +10,12 @@ public class Palm extends Plant{
     }
 
     @Override
-    public double getLiquidAmount() {
+    public double getLiquidAmount() { //Polymorfism overriding överordnade klassers metoder med sin egen implementation baserat objektets behov
         return 0.5 * getHeight();
     }
 
     @Override
-    public LiquidType getLiquidType() {
+    public LiquidType getLiquidType() { //Polymorfism overriding överordnade klassers metoder med sin egen implementation baserat objektets behov
         return liquidType;
     }
 

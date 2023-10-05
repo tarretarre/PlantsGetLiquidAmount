@@ -1,8 +1,8 @@
 package Inlamning1;
 
 abstract class Plant implements ILiquidRequirements{
-    private String plantName;
-    private double height;
+    private String plantName; //Inkapsling med publika metoder nedan för att ge åtkomst till och kunna justera variablerna
+    private double height; //Inkapsling med publika metoder nedan för att ge åtkomst till och kunna justera variablerna
 
     public Plant() {}
 
@@ -24,13 +24,13 @@ abstract class Plant implements ILiquidRequirements{
     }
 
     @Override
-    public double getLiquidAmount() {
+    public double getLiquidAmount() { //Polymorfism
         return 0;
     }
 
     public String printMe() {
         return "Plantan " + getPlantName()
                 + "\nbehöver " + getLiquidAmount() + " liter\n"
-                + getLiquidType().liquidType + " om dagen.";
+                + getLiquidType().liquidType + " om dagen."; //Polymorfism
     }
 }

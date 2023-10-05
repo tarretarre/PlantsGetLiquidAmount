@@ -1,6 +1,6 @@
 package Inlamning1;
 
-public class Cactus extends Plant{
+public class Cactus extends Plant{ //Arv
     private final LiquidType liquidType = ILiquidRequirements.mineralWater;
 
     public Cactus() {}
@@ -10,12 +10,12 @@ public class Cactus extends Plant{
     }
 
     @Override
-    public double getLiquidAmount() {
+    public double getLiquidAmount() { //Polymorfism overriding överordnade klassers metoder med sin egen implementation baserat objektets behov
         return 0.2;
     }
 
     @Override
-    public LiquidType getLiquidType() {
+    public LiquidType getLiquidType() { //Polymorfism overriding överordnade klassers metoder med sin egen implementation baserat objektets behov
         return liquidType;
     }
 
