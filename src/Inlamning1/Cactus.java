@@ -11,7 +11,7 @@ public class Cactus extends Plant{ //Arv
 
     @Override
     public double getLiquidAmount() { //Polymorfism overriding överordnade klassers metoder med sin egen implementation baserat objektets behov
-        return 0.2;
+        return 0.02;
     }
 
     @Override
